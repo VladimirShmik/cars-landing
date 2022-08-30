@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сars-landing</title>
+    <link rel="stylesheet" href="../scss/swiper-bundle.css">
+    <link rel="stylesheet" href="../scss/bootstrap.min.css">
+    <link rel="stylesheet" href="../scss/main.css">
+</head>
+<body>
+<!--header-content-->
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="desktop-wrapper">
+                    <a href="/" class="desktop-logo">
+                        <img src="../img/icons/logo-img.png" alt="logo-img" class="desktop-logo__img">
+                        <p class="desktop-logo__text">Only CARS</p>
+                    </a>
+                    <nav class="desktop-nav">
+                        <li class="desktop-nav__item">
+                            <a href="#" class="desktop-nav__link">О нас</a>
+                        </li>
+                        <li class="desktop-nav__item">
+                            <a href="#" class="desktop-nav__link">Решения</a>
+                        </li>
+                        <li class="desktop-nav__item">
+                            <a href="#" class="desktop-nav__link">Функции</a>
+                        </li>
+                        <li class="desktop-nav__item">
+                            <a href="#" class="desktop-nav__link">Тарифы</a>
+                        </li>
+                        <li class="desktop-nav__item">
+                            <a href="#" class="desktop-nav__link">Вопросы и ответы</a>
+                        </li>
+                        <li class="desktop-nav__item">
+                            <a href="#" class="desktop-nav__link">Контакты</a>
+                        </li>
+                    </nav>
+                    <div class="desktop-buttons">
+                        <button class="desktop-buttons__profile">Мой профиль</button>
+                        <div class="dropdown custom-dropdown">
+                            <button class="custom-btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ru
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Ru</a>
+                                <a class="dropdown-item" href="#">Ru</a>
+                                <a class="dropdown-item" href="#">Ru</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-wrapper">
+                    <button class="mobile-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="mobile-wrap">
+                        <button class="cancel-btn">&times;</button>
+                        <nav class="mobile-nav">
+                            <a href="#" class="mobile-nav__link">О нас</a>
+                            <a href="#" class="mobile-nav__link">нас</a>
+                            <a href="#" class="mobile-nav__link">Решения</a>
+                            <a href="#" class="mobile-nav__link">Функции</a>
+                            <a href="#" class="mobile-nav__link">Тарифы</a>
+                            <a href="#" class="mobile-nav__link">Вопросы и ответы</a>
+                            <a href="#" class="mobile-nav__link">Контакты</a>
+                        </nav>
+                    </div>
+                    <a href="#" class="mobile-link">
+                        <svg class="mobile-link__icon">
+                            <use xlink:href="../img/sprite.svg#user-cab"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--main-content-->
+<main class="main--cabinet">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 d-none d-xl-block">
+                <!-- cabinet-link--active - активный пункт меню-->
+                <nav class="cabinet-menu">
+                    <a href="#" class="cabinet-link">
+                        <svg class="cabinet-link__icon">
+                            <use xlink:href="../img/sprite.svg#car-cab"></use>
+                        </svg>
+                        <p class="cabinet-link__text">Организация</p>
+                    </a>
+                    <a href="#" class="cabinet-link cabinet-link--active">
+                        <svg class="cabinet-link__icon">
+                            <use xlink:href="../img/sprite.svg#credit-cab"></use>
+                        </svg>
+                        <p class="cabinet-link__text">Система учета</p>
+                    </a>
+                    <a href="#" class="cabinet-link">
+                        <svg class="cabinet-link__icon">
+                            <use xlink:href="../img/sprite.svg#bell-cab"></use>
+                        </svg>
+                        <p class="cabinet-link__text">Уведомления</p>
+                    </a>
+                    <a href="#" class="cabinet-link">
+                        <svg class="cabinet-link__icon">
+                            <use xlink:href="../img/sprite.svg#gear-cab"></use>
+                        </svg>
+                        <p class="cabinet-link__text">Настройки</p>
+                    </a>
+                    <a href="#" class="cabinet-link ">
+                        <svg class="cabinet-link__icon">
+                            <use xlink:href="../img/sprite.svg#sign-cab"></use>
+                        </svg>
+                        <p class="cabinet-link__text">Выход из аккаунта</p>
+                    </a>
+                </nav>
+            </div>
+            <div class="col-12 d-block d-xl-none">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Профиль</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Система учета</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-12 col-xl-9 px-0 px-xl-3">
+                <div class="form-wrapper">
+                <div class="verification-wrapper">
+                    <div class="verification-block">
+                        <h3 class="verification-block__title">Система учета</h3>
+                        <div class="tariffs-attention">
+                            <p class="tariffs-attention__title">Тарифный план: <span class="tariffs-attention__span">1 месяц</span>
+                            </p>
+                            <p class="tariffs-attention__text">Активируйте и получите доступ к полному функционалу
+                                сервиса на <span class="tariffs-attention__span">1 месяц абсолютно бесплатно!</span></p>
+                            <a href="#" class="tariffs-attention__btn">Активировать</a>
+                        </div>
+                        <div class="tariffs-wrap">
+                            <h3 class="tariffs-wrap__title">Тарифы</h3>
+                            <p class="tariffs-wrap__text">Стоимость будет зависеть от срока подключения. Чем дольше вы
+                                остаётесь с нами, тем выгоднее цена.</p>
+                            <p class="tariffs-wrap__subtitle">Платный тариф включает в себя полный функционал сервиса
+                                без ограничений.</p>
+                            <div class="swiper tariffsSwiper">
+                                <div class="swiper-wrapper swiper-wrapper--tariffs">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="cards-block">
+                                            <div class="cards-icon-bg">
+                                                <svg class="cards-icon-bg__icon">
+                                                    <use xlink:href="../img/sprite.svg#bus-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <p class="cards-block__month">1 месяц</p>
+                                            <p class="cards-block__price">29000 тенге<span class="cards-block__span">/мес</span>
+                                            </p>
+                                            <p class="cards-block__subtitle">Без экономии</p>
+                                            <a href="#" class="cards-block__link"  data-bs-toggle="modal" data-bs-target="#exampleModal">Подключить</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="cards-block cards-block--before">
+                                            <div class="cards-icon-bg">
+                                                <svg class="cards-icon-bg__icon">
+                                                    <use xlink:href="../img/sprite.svg#car-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <p class="cards-block__month">3 месяца</p>
+                                            <p class="cards-block__price">24000 тенге<span class="cards-block__span">/мес</span>
+                                            </p>
+                                            <p class="cards-block__subtitle">Экономите 5000 тг в месяц или
+                                                60 000 тг в год</p>
+                                            <a href="#" class="cards-block__link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Отключить</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="cards-block">
+                                            <div class="cards-icon-bg">
+                                                <svg class="cards-icon-bg__icon">
+                                                    <use xlink:href="../img/sprite.svg#rocket-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <p class="cards-block__month">6 месяцев</p>
+                                            <p class="cards-block__price">19000 тенге<span class="cards-block__span">/мес</span>
+                                            </p>
+                                            <p class="cards-block__subtitle">Экономите 10 000 тг в месяц или
+                                                120 000 тг в год</p>
+                                            <a href="#" class="cards-block__link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Подключить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="form-checkbox mb-2">
+                                <input type="checkbox" class="form-check-input custom-checkbox" id="exampleCheck1" checked>
+                                <label class="form-check-label custom-checkbox-label" for="exampleCheck1">Продлевать выбранный тариф автоматически</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="verification-wrapper">
+                    <h3 class="verification-block__title">История платежей</h3>
+                    <p class="verification-block__subtitle">Список истории платежей пока пуст</p>
+                    <div class="basket-block">
+                        <img src="../img/wrapper-img/basket-img.png" alt="basket-img" class="basket-block__img">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</main>
+<!--footer-content-->
+<footer class="footer--cabinet">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="cabinet-footer">
+                    <div class="footer-block">
+                        <a href="#" class="footer-block__logo">Only CARS &copy;</a>
+                        <p class="footer-block__year">2022</p>
+                    </div>
+                    <div class="footer-block">
+                        <a href="#" class="footer-block__text">onlycars_pro</a>
+                    </div>
+                    <div class="footer-block">
+                        <svg class="footer-block__icon">
+                            <use xlink:href="../img/sprite.svg#translate-cab"></use>
+                        </svg>
+                        <a href="#" class="footer-block__text">русский</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+<!-- Modal-1-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-content--tariffs">
+            <div class="modal-header">
+                <div class="modal-title" id="exampleModalLabel">
+                    <p class="modal-title__text">Тарифный план:</p>
+                    <span class="modal-title__span">  1 месяц бесплатно</span>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="cards-icon-bg">
+                    <svg class="cards-icon-bg__icon">
+                        <use xlink:href="../img/sprite.svg#bus-icon"></use>
+                    </svg>
+                </div>
+                    <p class="modal-body__text">Отлично! Теперь у Вас есть доступ к полному функционалу сервиса на <span class="modal-body__span">1 месяц абсолютно бесплатно!</span></p>
+                    <p class="modal-body__price">Тариф оплачен до: <span class="modal-body__bold">01.07.2022</span></p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="modal-footer__btn">Продолжить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal-2-->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-content--tariffs">
+            <div class="modal-header">
+                <div class="modal-title" id="exampleModalLabel2">
+                    <p class="modal-title__text">Тарифный план:</p>
+                    <span class="modal-title__span">  1 месяц бесплатно</span>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="cards-icon-bg">
+                    <svg class="cards-icon-bg__icon">
+                        <use xlink:href="../img/sprite.svg#car-icon"></use>
+                    </svg>
+                </div>
+                <p class="modal-body__text">Отлично! Теперь у Вас есть доступ к полному функционалу сервиса на <span class="modal-body__span">1 месяц абсолютно бесплатно!</span></p>
+                <p class="modal-body__price">Тариф оплачен до: <span class="modal-body__bold">01.07.2022</span></p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="modal-footer__btn">Продолжить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal-3-->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-content--tariffs">
+            <div class="modal-header">
+                <div class="modal-title" id="exampleModalLabel3">
+                    <p class="modal-title__text">Тарифный план:</p>
+                    <span class="modal-title__span">  1 месяц бесплатно</span>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="cards-icon-bg">
+                    <svg class="cards-icon-bg__icon">
+                        <use xlink:href="../img/sprite.svg#rocket-icon"></use>
+                    </svg>
+                </div>
+                <p class="modal-body__text">Отлично! Теперь у Вас есть доступ к полному функционалу сервиса на <span class="modal-body__span">1 месяц абсолютно бесплатно!</span></p>
+                <p class="modal-body__price">Тариф оплачен до: <span class="modal-body__bold">01.07.2022</span></p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="modal-footer__btn">Продолжить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/swiper-bundle.min.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

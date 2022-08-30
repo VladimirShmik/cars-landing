@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сars-landing</title>
+  <link rel="stylesheet" href="../scss/swiper-bundle.css">
+  <link rel="stylesheet" href="../scss/bootstrap.min.css">
+  <link rel="stylesheet" href="../scss/main.css">
+</head>
+<body>
+<!--header-content-->
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="desktop-wrapper">
+          <a href="/" class="desktop-logo">
+            <img src="../img/icons/logo-img.png" alt="logo-img" class="desktop-logo__img">
+            <p class="desktop-logo__text">Only CARS</p>
+          </a>
+          <nav class="desktop-nav">
+            <li class="desktop-nav__item">
+              <a href="#" class="desktop-nav__link">О нас</a>
+            </li>
+            <li class="desktop-nav__item">
+              <a href="#" class="desktop-nav__link">Решения</a>
+            </li>
+            <li class="desktop-nav__item">
+              <a href="#" class="desktop-nav__link">Функции</a>
+            </li>
+            <li class="desktop-nav__item">
+              <a href="#" class="desktop-nav__link">Тарифы</a>
+            </li>
+            <li class="desktop-nav__item">
+              <a href="#" class="desktop-nav__link">Вопросы и ответы</a>
+            </li>
+            <li class="desktop-nav__item">
+              <a href="#" class="desktop-nav__link">Контакты</a>
+            </li>
+          </nav>
+          <div class="desktop-buttons">
+            <button class="desktop-buttons__profile">Мой профиль</button>
+            <div class="dropdown custom-dropdown">
+              <button class="custom-btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ru
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Ru</a>
+                <a class="dropdown-item" href="#">Ru</a>
+                <a class="dropdown-item" href="#">Ru</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-wrapper">
+          <button class="mobile-button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="mobile-wrap">
+            <button class="cancel-btn">&times;</button>
+            <nav class="mobile-nav">
+              <a href="#" class="mobile-nav__link">О нас</a>
+              <a href="#" class="mobile-nav__link">нас</a>
+              <a href="#" class="mobile-nav__link">Решения</a>
+              <a href="#" class="mobile-nav__link">Функции</a>
+              <a href="#" class="mobile-nav__link">Тарифы</a>
+              <a href="#" class="mobile-nav__link">Вопросы и ответы</a>
+              <a href="#" class="mobile-nav__link">Контакты</a>
+            </nav>
+          </div>
+          <a href="#" class="mobile-link">
+            <svg class="mobile-link__icon">
+              <use xlink:href="../img/sprite.svg#user-cab"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--main-content-->
+<main class="main--cabinet">
+  <div class="container">
+    <form action="#">
+      <div class="row">
+        <div class="col-3 d-none d-xl-block">
+          <!-- cabinet-link--active - активный пункт меню-->
+          <nav class="cabinet-menu">
+            <a href="#" class="cabinet-link cabinet-link--active">
+              <svg class="cabinet-link__icon">
+                <use xlink:href="../img/sprite.svg#car-cab"></use>
+              </svg>
+              <p class="cabinet-link__text">Организация</p>
+            </a>
+            <a href="#" class="cabinet-link ">
+              <svg class="cabinet-link__icon">
+                <use xlink:href="../img/sprite.svg#credit-cab"></use>
+              </svg>
+              <p class="cabinet-link__text">Система учета</p>
+            </a>
+            <a href="#" class="cabinet-link">
+              <svg class="cabinet-link__icon">
+                <use xlink:href="../img/sprite.svg#bell-cab"></use>
+              </svg>
+              <p class="cabinet-link__text">Уведомления</p>
+            </a>
+            <a href="#" class="cabinet-link">
+              <svg class="cabinet-link__icon">
+                <use xlink:href="../img/sprite.svg#gear-cab"></use>
+              </svg>
+              <p class="cabinet-link__text">Настройки</p>
+            </a>
+            <a href="#" class="cabinet-link ">
+              <svg class="cabinet-link__icon">
+                <use xlink:href="../img/sprite.svg#sign-cab"></use>
+              </svg>
+              <p class="cabinet-link__text">Выход из аккаунта</p>
+            </a>
+          </nav>
+        </div>
+        <div class="col-12 d-block d-xl-none">
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Профиль</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Выход из аккаунта</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="col-12 col-xl-9 px-0 px-xl-auto">
+          <div class="form-wrapper">
+            <!--verification-section-->
+            <div class="verification-wrapper">
+              <div class="verification-block">
+                <h3 class="verification-block__title">Верификация</h3>
+                <div class="verification-attention">
+                  <p class="verification-attention__title">Верификация</p>
+                  <p class="verification-attention__text">Пройдите, пожалуйста, обязательную верификацию,
+                    какая займет несколько минут Вашего времени заполнив данные об организации. После
+                    того, как Ваш профиль будет верифицированный Вы будете иметь возможность доступа к
+                    полному функционалу сервиса</p>
+                </div>
+              </div>
+            </div>
+            <!--form-section-->
+            <div class="verification-wrapper">
+              <div class="verification-block">
+                <h3 class="verification-block__title">Информация о компании</h3>
+                <div class="verification-form">
+                  <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label">Наименование
+                      компании</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                           placeholder="Введите данные">
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleFormControlInput2" class="form-label">Полное наименование
+                      компании</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput2"
+                           placeholder="Введите данные">
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleFormControlInput3" class="form-label">Вид деятельности</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput3"
+                           placeholder="Введите данные">
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleFormControlInput4" class="form-label">БИН</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput4"
+                           placeholder="Введите данные">
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleFormControlInput5" class="form-label">Телефон организации</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput5"
+                           placeholder="Введите данные">
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleFormControlInput6" class="form-label">Страна</label>
+                    <select class="form-select" aria-label="Default select example"
+                            id="exampleFormControlInput6">
+                      <option selected>Выберите страну</option>
+                      <option value="1">Казахстан</option>
+                      <option value="2">Россия</option>
+                      <option value="3">Украина</option>
+                    </select>
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleFormControlInput7" class="form-label">Город</label>
+                    <select class="form-select" aria-label="Default select example"
+                            id="exampleFormControlInput7">
+                      <option selected>Выберите город</option>
+                      <option value="1">Казахстан</option>
+                      <option value="2">Россия</option>
+                      <option value="3">Украина</option>
+                    </select>
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleFormControlInput8" class="form-label">Адрес организации</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput8"
+                           placeholder="Введите данные">
+                  </div>
+                  <div class="map-wrap">
+                    <label class="form-label">Указать адрес организации на карте</label>
+                    <div class="map-block">
+                      <img src="../img/wrapper-img/map-img.png" alt="map-img" class="map-block__img">
+                      <button class="map-block__btn map-block__btn--plus">
+                        <svg class="map-block__icon">
+                          <use xlink:href="../img/sprite.svg#plus-cab"></use>
+                        </svg>
+                      </button>
+                      <button class="map-block__btn map-block__btn--minus">
+                        <svg class="map-block__icon">
+                          <use xlink:href="../img/sprite.svg#minus-cab"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--img-section-->
+            <div class="verification-wrapper">
+              <h3 class="verification-block__title">Фото</h3>
+              <p class="description-wrap__subtitle">Первое фото будет на обложке. Перетащите фото, чтобы изменить порядок</p>
+              <div class="verification-img">
+                <div class="img-block img-block--filled">
+                  <img src="../img/wrapper-img/img-block-1.png" alt="img-block-1" class="img-block__img">
+                  <span class="img-block__wrap">Обложка</span>
+                </div>
+                <div class="img-block img-block--filled">
+                  <img src="../img/wrapper-img/img-block-2.png" alt="img-block-2" class="img-block__img">
+                </div>
+                <div class="img-block img-block--filled">
+                  <img src="../img/wrapper-img/img-block-3.png" alt="img-block-3" class="img-block__img">
+                </div>
+                <div class="img-block img-block--filled">
+                  <img src="../img/wrapper-img/img-block-4.png" alt="img-block-4" class="img-block__img">
+                </div>
+              </div>
+            </div>
+            <!--schedule-section-->
+            <div class="verification-wrapper">
+              <div class="verification-block">
+                <h2 class="verification-block__title">График работы</h2>
+                <div class="form-check mb-5">
+                  <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault1">
+                  <label class="form-check-label verification-label" for="flexCheckDefault1">
+                    Круглосуточно
+                  </label>
+                </div>
+                <p class="schedule-wrapper__text">Укажите график работы организации</p>
+                <div class="schedule-grid">
+                  <div class="schedule-item">
+                    <div class="form-check grid-check">
+                      <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault2">
+                      <label class="form-check-label" for="flexCheckDefault2">
+                        Понедельник
+                      </label>
+                    </div>
+                    <div class="select-container">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>09:00</option>
+                        <option value="1">09:00</option>
+                        <option value="2">09:00</option>
+                        <option value="3">09:00</option>
+                      </select>
+                      <p class="schedule-item__text">по</p>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>18:00</option>
+                        <option value="1">18:00</option>
+                        <option value="2">18:00</option>
+                        <option value="3">18:00</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="schedule-item">
+                    <div class="form-check grid-check">
+                      <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault3">
+                      <label class="form-check-label" for="flexCheckDefault3">
+                        Вторник
+                      </label>
+                    </div>
+                    <div class="select-container">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>09:00</option>
+                        <option value="1">09:00</option>
+                        <option value="2">09:00</option>
+                        <option value="3">09:00</option>
+                      </select>
+                      <p class="schedule-item__text">по</p>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>18:00</option>
+                        <option value="1">18:00</option>
+                        <option value="2">18:00</option>
+                        <option value="3">18:00</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="schedule-item">
+                    <div class="form-check grid-check">
+                      <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault4">
+                      <label class="form-check-label" for="flexCheckDefault4">
+                        Среда
+                      </label>
+                    </div>
+                    <div class="select-container">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>09:00</option>
+                        <option value="1">09:00</option>
+                        <option value="2">09:00</option>
+                        <option value="3">09:00</option>
+                      </select>
+                      <p class="schedule-item__text">по</p>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>18:00</option>
+                        <option value="1">18:00</option>
+                        <option value="2">18:00</option>
+                        <option value="3">18:00</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="schedule-item">
+                    <div class="form-check grid-check">
+                      <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault5">
+                      <label class="form-check-label" for="flexCheckDefault5">
+                        Четверг
+                      </label>
+                    </div>
+                    <div class="select-container">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>09:00</option>
+                        <option value="1">09:00</option>
+                        <option value="2">09:00</option>
+                        <option value="3">09:00</option>
+                      </select>
+                      <p class="schedule-item__text">по</p>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>18:00</option>
+                        <option value="1">18:00</option>
+                        <option value="2">18:00</option>
+                        <option value="3">18:00</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="schedule-item">
+                    <div class="form-check grid-check">
+                      <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault6">
+                      <label class="form-check-label" for="flexCheckDefault6">
+                        Пятница
+                      </label>
+                    </div>
+                    <div class="select-container">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>09:00</option>
+                        <option value="1">09:00</option>
+                        <option value="2">09:00</option>
+                        <option value="3">09:00</option>
+                      </select>
+                      <p class="schedule-item__text">по</p>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>18:00</option>
+                        <option value="1">18:00</option>
+                        <option value="2">18:00</option>
+                        <option value="3">18:00</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="schedule-item">
+                    <div class="form-check grid-check">
+                      <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault7">
+                      <label class="form-check-label" for="flexCheckDefault7">
+                        Суббота
+                      </label>
+                    </div>
+                    <div class="select-container">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>09:00</option>
+                        <option value="1">09:00</option>
+                        <option value="2">09:00</option>
+                        <option value="3">09:00</option>
+                      </select>
+                      <p class="schedule-item__text">по</p>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>18:00</option>
+                        <option value="1">18:00</option>
+                        <option value="2">18:00</option>
+                        <option value="3">18:00</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="schedule-item">
+                    <div class="form-check grid-check">
+                      <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault8">
+                      <label class="form-check-label" for="flexCheckDefault8">
+                        Воскресенье
+                      </label>
+                    </div>
+                    <div class="select-container">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>09:00</option>
+                        <option value="1">09:00</option>
+                        <option value="2">09:00</option>
+                        <option value="3">09:00</option>
+                      </select>
+                      <p class="schedule-item__text">по</p>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>18:00</option>
+                        <option value="1">18:00</option>
+                        <option value="2">18:00</option>
+                        <option value="3">18:00</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--description-section-->
+            <div class="verification-wrapper">
+              <div class="description-wrap">
+                <h3 class="verification-block__title">Описание</h3>
+                <p class="description-wrap__subtitle">Расскажите более подробно о Вашей компании</p>
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Добавьте описание степени сложности.  Наш автосервис специализируется.." id="floatingTextarea2" ></textarea>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="description-wrap__text">Описание должно быть не короче 80 символов</p>
+                  <span class="description-wrap__text">0/2000</span>
+                </div>
+              </div>
+            </div>
+            <!--accordion-section-->
+            <div class="verification-wrapper">
+              <h3 class="verification-block__title">Услуги</h3>
+              <p class="description-wrap__subtitle">Выберете услуги, какие оказывает Вашей компания</p>
+              <div class="accordion accordion-description" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <div class="accordion-block">
+                        <svg class="accordion-block__icon">
+                          <use xlink:href="../img/sprite.svg#chassis-icon"></use>
+                        </svg>
+                        <p class="accordion-block__text">Обслуживание ходовой части</p>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <div class="accordion-block">
+                        <svg class="accordion-block__icon">
+                          <use xlink:href="../img/sprite.svg#diagnostic-icon"></use>
+                        </svg>
+                        <p class="accordion-block__text">Диагностика</p>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <div class="accordion-block">
+                        <svg class="accordion-block__icon">
+                          <use xlink:href="../img/sprite.svg#wrench-icon"></use>
+                        </svg>
+                        <p class="accordion-block__text">Техническое обслуживание</p>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <div class="accordion-block">
+                        <svg class="accordion-block__icon">
+                          <use xlink:href="../img/sprite.svg#transmission-icon"></use>
+                        </svg>
+                        <p class="accordion-block__text">Трансмиссия</p>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <div class="accordion-block">
+                        <img src="../img/icons/tire-icon.png" alt="tire-icon" class="accordion-block__img">
+                        <p class="accordion-block__text">Шиномонтаж и сход-развал</p>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      <div class="accordion-block">
+                        <img src="../img/icons/engine-icon.png" alt="engine-icon" class="accordion-block__img">
+                        <p class="accordion-block__text">Двигатель и система охлаждения</p>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      <div class="accordion-block">
+                        <img src="../img/icons/wheel-icon.png" alt="wheel-icon" class="accordion-block__img">
+                        <p class="accordion-block__text">Рулевое управление</p>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                      <div class="accordion-block">
+                        <img src="../img/icons/stop-icon.png" alt="stop-icon" class="accordion-block__img">
+                        <p class="accordion-block__text">Тормозная система</p>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                      <div class="accordion-block">
+                        <img src="../img/icons/car-icon.png" alt="car-icon" class="accordion-block__img">
+                        <p class="accordion-block__text">Кузовной ремонт</p>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                      <div class="form-check accordion-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                          Замена стоек переднего стабилизатора
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--bonus-section-->
+            <div class="verification-wrapper">
+              <h3 class="verification-block__title">Дополнительные сервисы</h3>
+              <p class="description-wrap__subtitle">Выберете дополнительные сервисы Вашей компании</p>
+              <div class="bonus-wrap">
+                <div class="form-check bonus-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                    <img src="../img/icons/wifi-icon.png" alt="wifi-icon" class="bonus-check__img">
+                    Wi-fi
+                  </label>
+                </div>
+                <div class="form-check bonus-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                    <img src="../img/icons/coffee-icon.png" alt="coffee-icon" class="bonus-check__img">
+                    Кафе
+                  </label>
+                </div>
+                <div class="form-check bonus-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                    <img src="../img/icons/couch-icon.png" alt="couch-icon" class="bonus-check__img">
+                    Комната отдыха
+                  </label>
+                </div>
+                <div class="form-check bonus-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                    <img src="../img/icons/wc-icon.png" alt="wc-icon" class="bonus-check__img">
+                    Туалет
+                  </label>
+                </div>
+                <div class="form-check bonus-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                    <img src="../img/icons/monitor-icon.png" alt="monitor-icon" class="bonus-check__img">
+                    Телевизор
+                  </label>
+                </div>
+                <div class="form-check bonus-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input custom-checkbox" type="checkbox" value="">
+                    <img src="../img/icons/puzzle-icon.png" alt="puzzle-icon" class="bonus-check__img">
+                    Зона для детей
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <a href="#" class="form-submit">Отправить на верификацию</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
+<!--footer-content-->
+<footer class="footer--cabinet">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="cabinet-footer">
+          <div class="footer-block">
+            <a href="#" class="footer-block__logo">Only CARS &copy;</a>
+            <p class="footer-block__year">2022</p>
+          </div>
+          <div class="footer-block">
+            <a href="#" class="footer-block__text">onlycars_pro</a>
+          </div>
+          <div class="footer-block">
+            <svg class="footer-block__icon">
+              <use xlink:href="../img/sprite.svg#translate-cab"></use>
+            </svg>
+            <a href="#" class="footer-block__text">русский</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/swiper-bundle.min.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

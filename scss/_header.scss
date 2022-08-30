@@ -1,0 +1,227 @@
+.header {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 30px rgba(58, 12, 163, 0.1);
+  backdrop-filter: blur(30px);
+}
+
+.desktop-wrapper {
+  display: grid;
+  grid-template-columns:  0.52fr 1fr  0.52fr;
+  padding: 16px 0;
+  align-items: center;
+  @media (min-width: 320px) and (max-width: 1199px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &--footer {
+    padding: 20px 0;
+  }
+}
+
+.desktop-logo {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    width: 60px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 10px;
+    @media (min-width: 320px) and (max-width: 1199px) {
+      width: 50px;
+      height: 25px;
+    }
+  }
+
+  &__text {
+    font-family: 'Montserrat', san-serif, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #4361EE;
+    @media (min-width: 320px) and (max-width: 1199px) {
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+  }
+
+  @media (min-width: 320px) and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.desktop-buttons {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 40px;
+  justify-content: end;
+  @media (min-width: 320px) and (max-width: 1199px) {
+    grid-template-columns: auto;
+  }
+
+  &__profile {
+    padding: 7px 18px;
+    background: #3A0CA3;
+    border: 2px solid #3A0CA3;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    @media (min-width: 320px) and (max-width: 1199px) {
+      display: none;
+    }
+  }
+}
+
+.custom-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 320px) and (max-width: 1199px) {
+    justify-content: flex-end;
+  }
+}
+
+/*mobile-menu*/
+.mobile-wrapper {
+  display: none;
+  @media (min-width: 320px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 12px 4px ;
+    border-top: 1px solid #EBEBEE;
+
+  }
+}
+.body--color{
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+}
+.mobile-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 83.3%;
+    position: absolute;
+    top: 0;
+    left: -9999px;
+  transition:  0.2s ease;
+    background: #FFFFFF;
+    height: 100vh;
+    padding: 70px 18px 0;
+  &--active{
+    left: 0;
+    transition:  0.2s ease;
+  }
+
+  .cancel-btn {
+    margin-left: auto;
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #899195;
+
+  }
+
+}
+
+.mobile-nav {
+  display: grid;
+  grid-row-gap: 40px;
+  align-items: center;
+  justify-content: center;
+
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+.mobile-button {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+.mobile-button span {
+  background: #3A0CA3;
+  border-radius: 10px;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.mobile-button span:first-child {
+  top: 0;
+}
+
+.mobile-button span:nth-child(2) {
+  top: 6px;
+}
+
+.mobile-button span:last-child {
+  top: 12px;
+}
+
+.mobile-button:hover span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-button:hover span:first-child,
+.mobile-button:hover span:last-child {
+  top: 6px;
+  background: #3A0CA3;
+}
+
+.mobile-button:hover span:first-child {
+  transform: rotate(45deg);
+}
+
+.mobile-button:hover span:last-child {
+  transform: rotate(-45deg);
+}
+.mobile-link{
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #3A0CA3;
+  &__icon{
+    width: 16px;
+    height: 16px;
+    stroke: #ffffff;
+  }
+}
