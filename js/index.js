@@ -2,13 +2,55 @@ new Swiper('.sliderMain', {
     slidesPerView: 1,
     centeredSlides: true,
     loop: true,
-    autoPlay: 3000,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     pagination: {
         el: ".swiper-pagination",
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            centeredSlides: false,
+            loop: false,
+            spaceBetween: 16,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 1,
+            centeredSlides: false,
+            loop: false,
+            spaceBetween: 16,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 1,
+            centeredSlides: false,
+            loop: false,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        },
+        1023: {
+            slidesPerView: 1,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        }
     },
     });
 const menuBtn = document.querySelector('.mobile-button');
@@ -48,7 +90,7 @@ if(form){
     'use strict'; // breakpoint where swiper will be destroyed
     // and switches to a dual-column layout
 
-    const breakpoint = window.matchMedia('(min-width:1023px)'); // keep track of swiper instances to destroy later
+    const breakpoint = window.matchMedia('(min-width:1199px)'); // keep track of swiper instances to destroy later
 
     let mySwiper;
     const breakpointChecker = function () {
@@ -66,9 +108,11 @@ if(form){
 
     const enableSwiper = function () {
         mySwiper = new Swiper('.tariffsSwiper', {
-            slidesPerView: 'auto',
-            spaceBetween: 20,
-            autoplay: 3000,
+            slidesPerView: 1,
+            spaceBetween: 16,
+            centeredSlides: false,
+            loop: false,
+
             a11y: true,
             keyboardControl: true,
             grabCursor: true,
