@@ -925,7 +925,8 @@ p {
   }
 }
 .main-img__img {
-  width: auto;
+  width: 100%;
+  max-width: 740px;
 }
 @media (min-width: 320px) and (max-width: 1023px) {
   .main-img__img {
@@ -1061,6 +1062,7 @@ p {
 }
 .life-img__img {
   width: 100%;
+  max-width: 620px;
   object-fit: cover;
   transform: translate(55px, -75px);
 }
@@ -1953,6 +1955,7 @@ p {
   width: 310px;
   margin: 0 auto;
   object-fit: cover;
+  border-radius: 20px 20px 0 0;
 }
 
 .workers-block {
@@ -2104,11 +2107,11 @@ p {
   }
 }
 .causes-img__img {
-  width: auto;
+  width: 65%;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .causes-img__img {
-    width: auto;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -2577,7 +2580,8 @@ p {
   }
 }
 .mobile-phone-wrap__img {
-  width: auto;
+  width: 100%;
+  max-width: 450px;
   object-fit: cover;
   margin-left: auto;
   margin-right: 10px;
@@ -3294,6 +3298,7 @@ p {
 .contacts-img__img {
   margin-left: auto;
   width: auto;
+  max-width: 360px;
   object-fit: cover;
 }
 @media (min-width: 320px) and (max-width: 767px) {

@@ -254,11 +254,11 @@
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  @media (min-width: 425px) and(max-width: 992px){
+  @media (min-width: 425px) and (max-width: 992px){
     padding: 10px 16px;
     margin: 0 -16px;
   }
-  @media (min-width: 320px) and(max-width: 424px){
+  @media (min-width: 320px) and (max-width: 424px){
     margin: 0 -16px;
     padding: 10px 10px;
   }
@@ -280,7 +280,7 @@
     font-weight: 400;
     font-size: 16px;
     color: #292929;
-    @media (min-width: 320px) and(max-width: 992px){
+    @media (min-width: 320px) and (max-width: 992px){
       display: none;
     }
   }
@@ -290,7 +290,7 @@
   grid-template-columns: 130px auto 130px;
   align-items: center;
   grid-column-gap: 20px;
-  @media (min-width: 320px) and(max-width: 992px){
+  @media (min-width: 320px) and (max-width: 992px){
     grid-template-columns: repeat(2, 95px);
   }
   .form-select{

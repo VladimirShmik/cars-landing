@@ -1,6 +1,5 @@
 .main-bg {
   position: relative;
-
   &::before {
     content: '';
     position: absolute;
@@ -129,7 +128,8 @@
   }
 
   &__img {
-    width: auto;
+    width: 100%;
+    max-width: 740px;
     @media(min-width: 320px) and (max-width: 1023px) {
       width: 95%;
       margin: 0 auto;
@@ -246,6 +246,7 @@
 
   &__img {
     width: 100%;
+    max-width: 620px;
     object-fit: cover;
     transform: translate(55px, -75px);
     @media(min-width: 320px) and (max-width: 1023px) {
@@ -1090,6 +1091,7 @@
     width: 310px;
     margin: 0 auto;
     object-fit: cover;
+    border-radius: 20px 20px 0 0;
   }
 }
 
@@ -1227,9 +1229,9 @@
   }
 
   &__img {
-    width: auto;
+    width: 65%;
     @media(min-width: 320px) and (max-width: 767px) {
-      width: auto;
+      width: 100%;
       margin: 0 auto;
     }
   }
@@ -1675,7 +1677,8 @@
   }
 
   &__img {
-    width: auto;
+    width: 100%;
+    max-width: 450px;
     object-fit: cover;
     margin-left: auto;
     margin-right: 10px;
@@ -2368,6 +2371,7 @@
   &__img {
     margin-left: auto;
     width: auto;
+    max-width: 360px;
     object-fit: cover;
     @media(min-width: 320px) and (max-width: 767px) {
       width: 100%;
