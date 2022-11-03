@@ -732,6 +732,12 @@
   @media(min-width: 1024px){
     overflow: visible;
   }
+  .swiper-pagination{
+    display: none;
+    @media(max-width: 1119px){
+      display: block;
+    }
+  }
 
 
 }
@@ -740,10 +746,18 @@
   grid-template-columns: repeat(3, 300px);
   grid-column-gap: 20px;
   padding: 35px 0px 45px;
-  @media(min-width: 320px) and (max-width: 1023px){
+  @media(min-width: 320px) and (max-width: 1199px){
     width: calc(100vw - 16px*2);
     display: flex;
     grid-column-gap: 20px;
+
+  }
+  @media(min-width: 1024px) and (max-width: 1190px){
+    width: 600px;
+
+  }
+  @media(min-width: 1200px) and (max-width: 1439px){
+    grid-template-columns: repeat(3, 1fr);
 
   }
   .swiper-slide {
@@ -760,6 +774,11 @@
       font-size: 14px;
       padding: 7px 10px;
       top: 51px;
+      @media(min-width: 1200px) and (max-width: 1400px){
+        font-size: 12px;
+        padding: 5px 10px;
+
+      }
     }
     &__month{
       font-weight: 500;

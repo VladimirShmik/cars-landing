@@ -1558,6 +1558,9 @@
        'links img';
     padding: 60px 0 60px;
   }
+  @media(min-width: 1024px) and (max-width: 11440px) {
+    padding: 80px 0 60px;
+  }
 
 }
 
@@ -2097,7 +2100,7 @@
 }
 
 .accordion-wrap {
-  padding: 120px 0 120px;
+  padding: 125px 0 120px;
   @media(min-width: 320px) and (max-width: 767px) {
     padding: 60px 0 60px;
   }

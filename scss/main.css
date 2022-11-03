@@ -2446,6 +2446,11 @@ p {
     padding: 60px 0 60px;
   }
 }
+@media (min-width: 1024px) and (max-width: 11440px) {
+  .mobile-app-wrapper {
+    padding: 80px 0 60px;
+  }
+}
 
 .mobile-phone-block {
   position: absolute;
@@ -3021,7 +3026,7 @@ p {
 }
 
 .accordion-wrap {
-  padding: 120px 0 120px;
+  padding: 125px 0 120px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .accordion-wrap {
@@ -4092,6 +4097,14 @@ p {
     overflow: visible;
   }
 }
+.tariffsSwiper .swiper-pagination {
+  display: none;
+}
+@media (max-width: 1119px) {
+  .tariffsSwiper .swiper-pagination {
+    display: block;
+  }
+}
 
 .swiper-wrapper--tariffs {
   display: grid;
@@ -4099,11 +4112,21 @@ p {
   grid-column-gap: 20px;
   padding: 35px 0px 45px;
 }
-@media (min-width: 320px) and (max-width: 1023px) {
+@media (min-width: 320px) and (max-width: 1199px) {
   .swiper-wrapper--tariffs {
     width: calc(100vw - 32px);
     display: flex;
     grid-column-gap: 20px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1190px) {
+  .swiper-wrapper--tariffs {
+    width: 600px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .swiper-wrapper--tariffs {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 320px) and (max-width: 425px) {
@@ -4120,6 +4143,12 @@ p {
   font-size: 14px;
   padding: 7px 10px;
   top: 51px;
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .swiper-wrapper--tariffs .cards-block::before {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
 }
 .swiper-wrapper--tariffs .cards-block__month {
   font-weight: 500;
