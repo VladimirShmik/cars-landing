@@ -4112,16 +4112,29 @@ p {
   grid-column-gap: 20px;
   padding: 35px 0px 45px;
 }
-@media (min-width: 320px) and (max-width: 1199px) {
+@media (min-width: 320px) and (max-width: 424px) {
   .swiper-wrapper--tariffs {
-    width: calc(100vw - 32px);
+    max-width: 300px;
     display: flex;
-    grid-column-gap: 20px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1190px) {
+@media (min-width: 425px) and (max-width: 767px) {
   .swiper-wrapper--tariffs {
-    width: 600px;
+    max-width: 380px;
+    display: flex;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .swiper-wrapper--tariffs {
+    max-width: 450px;
+    display: flex;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .swiper-wrapper--tariffs {
+    max-width: 650px;
+    display: flex;
+    grid-column-gap: 20px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
