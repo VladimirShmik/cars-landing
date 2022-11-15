@@ -125,6 +125,64 @@ if(form){
             paginationClickable: true
         });
     };
+    const cabinetSwiper = function () {
+        mySwiper = new Swiper('.tariffsSwiperCabinet', {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            centeredSlides: false,
+            loop: false,
+
+            a11y: true,
+            keyboardControl: true,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            paginationClickable: true,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    centeredSlides: false,
+                    loop: false,
+                    spaceBetween: 16,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    centeredSlides: true,
+                    loop: false,
+                    spaceBetween: 16,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+                    centeredSlides: true,
+                    loop: false,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                },
+                1023: {
+                    slidesPerView: 1,
+                    centeredSlides: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                }
+            },
+        });
+    };
     breakpoint.addListener(breakpointChecker); // kickstart
 
     breakpointChecker();

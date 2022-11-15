@@ -741,6 +741,19 @@
 
 
 }
+.tariffsSwiperCabinet{
+  overflow: visible;
+  @media(min-width: 426px) and (max-width: 1200px){
+    overflow: hidden;
+    padding: 16px;
+    .swiper-wrapper--tariffs{
+      grid-gap: 0;
+    }
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+      bottom: 20px;
+    }
+  }
+}
 .swiper-wrapper--tariffs{
  display: grid;
   grid-template-columns: repeat(3, 300px);

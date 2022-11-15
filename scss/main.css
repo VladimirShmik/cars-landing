@@ -4106,6 +4106,22 @@ p {
   }
 }
 
+.tariffsSwiperCabinet {
+  overflow: visible;
+}
+@media (min-width: 426px) and (max-width: 1200px) {
+  .tariffsSwiperCabinet {
+    overflow: hidden;
+    padding: 16px;
+  }
+  .tariffsSwiperCabinet .swiper-wrapper--tariffs {
+    grid-gap: 0;
+  }
+  .tariffsSwiperCabinet .swiper-pagination-fraction, .tariffsSwiperCabinet .swiper-pagination-custom, .tariffsSwiperCabinet .swiper-horizontal > .swiper-pagination-bullets, .tariffsSwiperCabinet .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 20px;
+  }
+}
+
 .swiper-wrapper--tariffs {
   display: grid;
   grid-template-columns: repeat(3, 300px);
